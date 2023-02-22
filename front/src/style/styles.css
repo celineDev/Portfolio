@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@import 'navigation.css';
+@import 'animations.css';
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --hover: #D09483;
+    --fontColor: #666666;
+}
+
+body {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--fontColor);
+    font-weight: 500;
+}

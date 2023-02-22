@@ -1,0 +1,121 @@
+header {
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 140px 0 140px;
+    text-transform: uppercase;
+    box-shadow: 0 0 0.5rem #919191;
+    background-color: #fff;
+
+
+    margin-bottom: 200px;
+}
+
+.logo {
+    width: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+}
+
+.link,
+.toggle {
+    padding-left: 25px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.link > li > a,
+.toggle > li > a {
+    text-decoration: none;
+    color: var(--fontColor);
+    padding-left: 25px;
+    transition: 250ms;
+}
+
+.link > li > a:hover,
+.toggle > li > a:hover {
+    color: var(--hover);
+}
+
+/* toggle navigation part */
+.burger-btn {
+    display: none;
+    color: var(--fontColor);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-btn:hover {
+    color: var(--hover);
+    transition: 250ms;
+}
+
+/* Visibility hide for desktop */
+.hide-for-desktop {
+    /* hide for desktop */
+    display: none;
+}
+
+@media screen and (max-width: 959px){
+    header {
+        padding: 0 70px 0 70px;
+    }
+
+    header > nav {
+    }
+
+    /* Visibility hide for mobile */
+    .hide-for-mobile {
+        display: none;
+    }
+
+    .hide-for-desktop {
+        /* hide for desktop */
+        display: inline-block;
+    }
+
+    .toggle {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        height: 300px;
+        width: 100%;
+        background-color: aliceblue;
+    }
+
+    .toggle > li {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-btn {
+        display: flex;
+        /* background-color: orange;
+        color: red;
+        height: 200px; */
+    }
+}
+
+@media screen and (max-width: 375px){
+    header > nav {
+        background-color: pink;
+    }
+}
