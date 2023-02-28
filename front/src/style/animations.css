@@ -1,3 +1,4 @@
-.has-fade {
-    /* visibility: hidden; */
+@keyframes burger-toggle {
+    from {top: -14rem;}
+    to {top: 5rem;}
 }
