@@ -1,16 +1,44 @@
 import React from 'react';
+import banner_desktop from './../assets/banner/banner_1920.jpg';
+import banner_tablet from './../assets/banner/banner_1280.jpg';
+import banner_smart from './../assets/banner/banner_640.jpg';
+import profile from './../assets/profile/profile.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Accueil = () => {
     return (
-        <div>
-            <h2 id='accueil'>Accueil</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut tempora rerum hic voluptatibus suscipit iusto, sequi cum eligendi laborum, aliquid officiis, tempore blanditiis alias molestiae omnis. Nostrum, voluptates illo.
-            Tempora minima nihil eveniet quam officia quod doloribus sit vero sint labore, laboriosam placeat veritatis delectus maxime. Voluptates tenetur vel itaque perspiciatis obcaecati dignissimos molestiae, voluptatem aliquid accusantium esse laborum.
-            Corporis cupiditate hic vero obcaecati repellat alias, quis quibusdam temporibus fugit, rem ullam aspernatur ipsa, veritatis corrupti magni tenetur deserunt? Cum minus amet modi fugiat ratione iure ut, quasi optio.
-            Dolor accusantium similique nobis voluptatum corporis, eos consequatur. Fugit temporibus magnam libero ratione eos reiciendis ad iusto ab provident molestias, inventore quis enim! Et excepturi atque fugit repellendus magni facilis!
-            Fugit laborum culpa voluptates itaque, sit, aspernatur eos asperiores dolorum cum molestiae labore ut odit provident ex doloremque. Praesentium sint suscipit repellendus dignissimos velit corrupti earum officiis laudantium sapiente cumque.
-            Sapiente accusamus sint reprehenderit ab voluptates et dolorum dignissimos atque! Ex dolor saepe minima cum libero ipsa fuga quae laborum, aspernatur accusantium officia exercitationem repellat quod quis numquam atque sapiente?</p>
-        </div>
+        <section className='banner-container'>
+            <picture className='banner'>
+                <source
+                    media="(max-width: 375px)"
+                    srcSet={banner_smart}
+                    sizes="375px"
+                />
+                <source
+                    media="(max-width: 959px)"
+                    srcSet={banner_tablet}
+                    sizes="959px"
+                />
+                <source
+                    srcSet={banner_desktop}
+                    sizes="1280px"
+                />
+                <img src="image-url-1280.jpeg" alt='banner'/>
+            </picture>
+            <div className='banner-profile'>
+                <figure>
+                    <img src={profile} alt="avatar" />
+                    <figcaption>Céline Mouflard</figcaption>
+                </figure>
+                <h1>Développeuse Web Front-End </h1>
+                <div className='icon'>
+                    <a title='linkedin' target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/celine-mouflard/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                    <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev?tab=repositories"><FontAwesomeIcon icon={faSquareGithub} size="2x" /></a>
+                </div>
+                <button className='contact'><a href="mailto:celine667@hotmail.fr">Contactez-moi</a></button>
+            </div>
+        </section>
     );
 };
 

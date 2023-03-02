@@ -1,0 +1,89 @@
+.banner img {
+  height: 854px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-profile {
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  text-align: center;
+  transition: 250ms;
+}
+
+.banner-profile > figure > img {
+  border-radius: 50%;
+}
+
+.banner-profile > figure > figcaption {
+  font-size: 36px;
+  font-weight: 700;
+  transition: 250ms;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: 250ms;
+}
+
+.icon {
+  margin-bottom: 20px;
+  transition: 250ms;
+}
+
+.icon > a:first-child {
+  /* color: #0e76a8; */
+  color: var(--font);
+  margin-right: 10px;
+}
+
+.icon > a:last-child {
+  /* color: #171515; */
+  color: var(--font);
+}
+
+.icon > a:hover {
+  transition: 250ms;
+  color: var(--hover);
+}
+
+@media screen and (max-width: 59.9375rem){
+  .banner img {
+    height: 700px;
+  }
+
+  .banner-profile {
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 23.4375rem){
+  .banner img {
+    height: 600px;
+  }
+
+  .banner-profile {
+    top: 155px;
+  }
+
+  .banner-profile > figure > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .banner-profile > figure > figcaption {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    margin-bottom: 12px;
+  }
+}

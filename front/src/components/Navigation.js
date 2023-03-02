@@ -19,7 +19,7 @@ const Navigation = () => {
     return (
         <header>
             <div className='nav-container'>
-                <a className='logo' href="/">cm</a>
+                <a id='accueil' className='logo' href="/">cm</a>
                 <nav>
                     <ul className='link hide-for-mobile'>
                         <li><HashLink smooth to="#accueil">Accueil</HashLink></li>

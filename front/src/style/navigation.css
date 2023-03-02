@@ -61,6 +61,10 @@ header.open .nav-container {
     cursor: pointer;
 }
 
+.burger-btn:hover {
+    background-color: #fff;
+}
+
 .burger-btn > span {
     display: none;
     width: 1.625rem;
