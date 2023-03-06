@@ -16,17 +16,31 @@ const Navigation = () => {
         setIsOpen(!isOpen)
     }
 
+    function handleClick(e) {
+        console.log('resr')
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        const newTarget = target.substring(1)
+
+        if (newTarget.charAt(0) === '#') {
+            const offset = document.querySelector(newTarget).offsetTop - 160
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            })
+        }
+    }
+
     return (
         <header>
             <div className='nav-container'>
-                <a id='accueil' className='logo' href="/">cm</a>
+                <HashLink className='logo' smooth to="#accueil">cm</HashLink>
                 <nav>
                     <ul className='link hide-for-mobile'>
-                        <li><HashLink smooth to="#accueil">Accueil</HashLink></li>
-                        <li><HashLink smooth to="#apropos">A propos</HashLink></li>
-                        <li><HashLink smooth to="#competences">Compétences</HashLink></li>
-                        <li><HashLink smooth to="#portfolio">Portfolio</HashLink></li>
-                        <li><HashLink smooth to="#contact">Contact</HashLink></li>
+                        <li><HashLink onClick={handleClick} to="#apropos">A propos</HashLink></li>
+                        <li><HashLink onClick={handleClick} to="#competences">Compétences</HashLink></li>
+                        <li><HashLink onClick={handleClick} to="#portfolio">Portfolio</HashLink></li>
+                        <li><HashLink onClick={handleClick} to="#contact">Contact</HashLink></li>
                     </ul>
 
                     <button onClick={handleMenu} className='burger-btn'>
@@ -39,11 +53,11 @@ const Navigation = () => {
 
             {isOpen && (
                 <ul className='toggle hide-for-desktop'>
-                    <li><HashLink smooth to="#accueil">Accueil</HashLink></li>
-                    <li><HashLink smooth to="#apropos">A propos</HashLink></li>
-                    <li><HashLink smooth to="#competences">Compétences</HashLink></li>
-                    <li><HashLink smooth to="#portfolio">Portfolio</HashLink></li>
-                    <li><HashLink smooth to="#contact">Contact</HashLink></li>
+                    {/* <li><HashLink smooth to="#accueil">Accueil</HashLink></li> */}
+                    <li><HashLink onClick={handleClick} to="#apropos">A propos</HashLink></li>
+                    <li><HashLink onClick={handleClick} to="#competences">Compétences</HashLink></li>
+                    <li><HashLink onClick={handleClick} to="#portfolio">Portfolio</HashLink></li>
+                    <li><HashLink onClick={handleClick} to="#contact">Contact</HashLink></li>
                 </ul>
             )}
         </header>

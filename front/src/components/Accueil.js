@@ -8,7 +8,7 @@ import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Accueil = () => {
     return (
-        <section className='banner-container'>
+        <section id='accueil' className='banner-container'>
             <picture className='banner'>
                 <source
                     media="(max-width: 375px)"
