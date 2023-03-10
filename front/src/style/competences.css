@@ -1,0 +1,53 @@
+#competences {
+    background-color: var(--bgc);
+    max-width: 100%;
+    padding: 80px 20px;
+}
+
+.technos {
+    max-width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #fff;
+    box-shadow: 2px 4px 8px var(--shadow);
+    margin-bottom: 25px;
+    border-radius: 15px;
+    padding: 25px 50px 40px;
+    transition: 250ms;
+}
+
+article:hover {
+    scale: 1.01;
+    box-shadow: 3px 5px 9px #cccccc;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.pink-icon {
+    color: #555;
+    padding: 0 12px;
+    transition: 500ms;
+}
+
+.pink-icon:hover {
+    color: var(--hover);
+}
+
+@media screen and (max-width: 23.4375rem){
+    article > h3 {
+        font-size: 18px;
+    }
+}

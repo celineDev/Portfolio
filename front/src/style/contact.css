@@ -1,0 +1,40 @@
+#contact {
+    background-color: var(--bgc);
+    max-width: 100%;
+    padding: 80px 20px;
+    margin: 0;
+}
+
+.personnal {
+    display: flex;
+    justify-content: center;
+}
+
+svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa {
+    margin-right: 20px;
+}
+
+.personnal > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+    text-decoration: none;
+    margin: 25px 80px;
+    transition: 250ms;
+}
+
+@media screen and (max-width: 59.9375rem){
+    .personnal {
+        display: block;
+        /* margin-bottom: 90px; */
+        /* justify-content: center; */
+    }
+
+    .personnal > a:first-child {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 23.4375rem){}

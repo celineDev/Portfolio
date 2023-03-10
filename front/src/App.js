@@ -5,6 +5,7 @@ import Apropos from './components/Apropos';
 import Competences from './components/Competences';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Competences />
         <Portfolio />
         <Contact />
+        <Footer />
     </BrowserRouter>
   );
 };
