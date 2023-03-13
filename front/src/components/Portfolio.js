@@ -69,7 +69,7 @@ const Portfolio = () => {
                             <p>Javascript</p>
                             <h3>Tip Calculator App</h3>
                             <p>Application qui calcule le pourboire en fonction du prix, du nombres de personnes et du pourcentage à verser.</p>
-                            <a target="_blank" rel='noreferrer' href="https://github.com/celineDev/kanap">Démo du projet <FontAwesomeIcon icon={faLaptopCode} size="lg" /></a>
+                            <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Tip-Calculator-App/">Démo du projet <FontAwesomeIcon icon={faLaptopCode} size="lg" /></a>
                         </figcaption>
                     </figure>
                     <figure  className='portfolio-projet'>
