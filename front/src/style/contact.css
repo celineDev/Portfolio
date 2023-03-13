@@ -1,7 +1,7 @@
 #contact {
     background-color: var(--bgc);
     max-width: 100%;
-    padding: 80px 20px;
+    padding: 5rem 1.25rem;
     margin: 0;
 }
 
@@ -12,7 +12,7 @@
 
 svg:not(:root).svg-inline--fa,
 svg:not(:host).svg-inline--fa {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .personnal > a {
@@ -21,20 +21,16 @@ svg:not(:host).svg-inline--fa {
     align-items: center;
     color: var(--fontColor);
     text-decoration: none;
-    margin: 25px 80px;
+    margin: 1.5625rem 5rem;
     transition: 250ms;
 }
 
 @media screen and (max-width: 59.9375rem){
     .personnal {
         display: block;
-        /* margin-bottom: 90px; */
-        /* justify-content: center; */
     }
 
     .personnal > a:first-child {
-        margin-top: 80px;
+        margin-top: 5rem;
     }
 }
-
-@media screen and (max-width: 23.4375rem){}

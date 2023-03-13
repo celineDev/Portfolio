@@ -1,7 +1,7 @@
 footer {
     background-color: var(--hover);
     color: white;
-    height: 50px;
+    height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
