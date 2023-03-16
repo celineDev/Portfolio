@@ -17,7 +17,6 @@ const Navigation = () => {
     }
 
     function handleClick(e) {
-        console.log('resr')
         e.preventDefault();
         const target = e.target.getAttribute('href');
         const newTarget = target.substring(1)
