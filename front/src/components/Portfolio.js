@@ -6,6 +6,8 @@ import kanap from './../assets/projets/kanap.png'
 import groupomania from './../assets/projets/groupomania.png'
 import tipcal from './../assets/projets/tipcal.png'
 import todo from './../assets/projets/todo.png'
+import portfolio from './../assets/projets/portfolio.png'
+import infomaniak from './../assets/projets/infomaniak.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
@@ -79,6 +81,24 @@ const Portfolio = () => {
                             <h3>Todo App</h3>
                             <p>Application de liste to-do.</p>
                             <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/To-do-app/">Démo du projet <FontAwesomeIcon icon={faLaptopCode} size="lg" /></a>
+                        </figcaption>
+                    </figure>
+                    <figure  className='portfolio-projet'>
+                        <img src={portfolio} alt="" />
+                        <figcaption>
+                            <p>React JS</p>
+                            <h3>Portfolio</h3>
+                            <p>Mon portfolio de dév.</p>
+                            <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Porfolio-online/">Démo du projet <FontAwesomeIcon icon={faLaptopCode} size="lg" /></a>
+                        </figcaption>
+                    </figure>
+                    <figure  className='portfolio-projet'>
+                        <img src={infomaniak} alt="" />
+                        <figcaption>
+                            <p>Next JS</p>
+                            <h3>Infomaniak</h3>
+                            <p>Reproduction du site Infomaniak, côté front.</p>
+                            <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev/infomaniakClone">Repo Github du projet <FontAwesomeIcon icon={faSquareGithub} size="lg" /></a>
                         </figcaption>
                     </figure>
                 </div>
